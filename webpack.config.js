@@ -8,9 +8,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  devtool: 'eval-source-map',
-  devserver: {
-    watchfiles: ['src/index.html'],
+  devtool: 'inline-source-map',
+  devServer: {
+    watchFiles: ['./src/index.html'],
   },
   module: {
     rules: [
@@ -35,7 +35,4 @@ module.exports = {
         inject: 'body',
     })
   ],
-  optimization: {
-    runtimeChunk: 'single',
-  },
 };
