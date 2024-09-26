@@ -1,5 +1,5 @@
 class Task {
-    state = "";
+    state = 'incomplete';
 
     constructor(title, desc, dueDate, priority){
         this.title = title;
