@@ -6,11 +6,27 @@
     <title>Todo</title>
 </head>
 <body>
-    <div>
-        <button>Add new task</button>
-        <h1>My projects</h1>
-        <div id="projects"></div>
-        <button>Add new project</button>
-    </div>
+    <h1>Todos List</h1>
+        <div>
+            <button id="addProjectbtn">Add new project</button>
+            <h2>My projects</h2>
+            <div id="projects"></div>
+            <button id="addTaskbtn">Add new task</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <form action="">
+                    <label for="">Title</label>
+                    <input type="text">
+                    <label for="">Description</label>
+                    <input type="text">
+                    <label for="">Due date</label>
+                    <input type="text">
+                    <label for="">Priority</label>
+                    <input type="text">
+                  </form>
+                </div>
+              </div>
+        </div>
 </body>
 </html>

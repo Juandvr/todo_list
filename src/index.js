@@ -1,5 +1,6 @@
 import { Task, Project } from './classes.js';
-import { displayProject } from './mainpage.js';
+import { displayProject, displayModal } from './mainpage.js';
+import './style.css';
 
 const todos = new Project('Todos', 'todos');
 
@@ -13,3 +14,5 @@ createTask('crear', 'proyecto', '20/23/56', 'alta');
 for (const task of todos.tasks){
     displayProject(task);
 }
+
+displayModal();
